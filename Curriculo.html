@@ -51,6 +51,17 @@
                 <li>✔ Proatividade</li>
             </ul>
         </div>
+
+        
+    <!-- Botão Fora da Div do Currículo -->
+    <button onclick="gerarPDF()">Baixar Currículo</button>
+
+    <script>
+        function gerarPDF() {
+            const elemento = document.getElementById('curriculo');
+            html2pdf().from(elemento).save('curriculo.pdf');
+        }
+    </script>
     </body>
     </html>
     
